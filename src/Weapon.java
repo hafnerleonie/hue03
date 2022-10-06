@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Weapon implements Comparable<Weapon> {
+public class Weapon{
     private final String name;
     private final CombatType combatType;
     private final DamageType damageType;
@@ -65,8 +65,8 @@ public class Weapon implements Comparable<Weapon> {
     }
 
     @Override
-    public int compareTo(Weapon o) {
-        return 0;
+    public String toString() {
+        return "Weapon{" + "name=" + name + ", combatType=" + combatType + ", damageType=" + damageType + ", damage=" + damage + ", speed=" + speed + ", minStrength=" + minStrength + ", value=" + value + '}';
     }
 }
 
